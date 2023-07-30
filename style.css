@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    border-bottom: 2px solid rgb(255, 255, 255, 0.1);
+}
+
+header .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding-top: 10px;
+    background-color: rgb(48, 47, 47);
+    color: white;
+    font-size: 19px;
+    height: 15vh;
+}
+
+header .navbar h1 span {
+    color: rgb(255, 115, 0);
+}
+
+header .navbar a {
+    padding-left: 15px;
+    color: white;
+}
+
+header .navbar a:hover {
+    color: rgb(255, 115, 0);
+    transform: scale(1.1);
+}
+
+header .navbar .collapse {
+    position: absolute;
+    right: 14px;
+    display: flex;
+    gap: 10px;
+}
+
+header .navbar .collapse .nav-item {
+    padding: 6px;
+}
+
+/* home section */
+
+body .homesec {
+    height: 119vh;
+    background-color: rgba(17, 14, 14, 0.397);
+}
+
+#video-background {
+    margin: 0;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#content {
+    position: absolute;
+    text-align: center;
+    height: 101vh;
+    top: 15vh;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding-top: 30vh;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.how-it-works {
+    height: 50vh;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    align-items: center;
+    color: rgb(255, 115, 0);
+    padding: 10px;
+}
+
+.how-it-works .flex {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.how-it-works .flex div {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+
+.how-it-works .flex div:hover {
+    background-color: rgb(85, 255, 255);
+    transform: scale(1.1);
+    border-radius: 12px;
+}
+
+.how-it-works .flex img {
+    margin: 20px;
+}
+
+/* properties section design */
+.propertiessec {
+    padding-top: 10vh;
+    margin-top: 5vh;
+}
+
+.propertiessec h2 {
+    color: rgb(255, 115, 0);
+    text-align: center;
+    padding-bottom: 4vh;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.carousel-container .allpro {
+    margin-top: 9vh;
+    text-align: center;
+    align-items: center;
+}
+
+.carousel-container .allpro .btn1 {
+    padding: 10px 40px;
+    background-color: rgb(252, 114, 1);
+    color: white;
+    border-radius: 10px;
+}
+
+.carousel-container .allpro .btn1:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    gap: 2rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    transition: transform 0.3s ease;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Adjust the card width and margins as per your design */
+.cards .card {
+    width: 600px;
+    margin-right: 20px;
+    border: 4px solid black;
+}
+
+.carousel-card {
+    border: 3px solid rgb(143, 140, 140);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.carousel-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.carousel-card h4 {
+    padding: 12px;
+}
+
+/* Hide prev/next buttons when they are not needed */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 29px;
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0.836);
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    opacity: 1;
+}
+
+/* Agent Section Design */
+.agentssec .agent1 {
+    margin-top: 10vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.agentssec .agent1 h2 {
+    color: rgb(255, 115, 0);
+    padding-bottom: 25px;
+}
+
+.agentssec .agent1 .center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.agent1 .agentcontainer {
+    padding-left: 15vw;
+    display: flex;
+    gap: 3rem;
+    flex-direction: row;
+}
+
+.agent1 .agentcontainer .cartagent {
+    border: 1px solid rgb(92, 88, 87);
+
+}
+
+.agent1 .agentcontainer .cartagent h5 {
+    padding-top: 10px;
+}
+
+/* about clients section design */
+.clients {
+    margin-top: 15vh;
+    margin-bottom: 6vh;
+    height: 60vh;
+    text-align: center;
+    align-items: center;
+}
+
+.clients h2 {
+    color: rgb(255, 115, 0);
+    padding-bottom: 10px;
+}
+
+.card-slider {
+    margin: auto;
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+}
+
+
+.cards-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card {
+    flex: 0 0 400px;
+    height: 450px;
+    padding: 19px;
+    background-color: #fffbfb;
+    box-sizing: border-box;
+    text-align: justify;
+    align-items: center;
+}
+
+.card img {
+    border-radius: 46%;
+}
+
+.card h5 {
+    padding: 10px;
+}
+
+/* Contact section design */
+.contactsec {
+    margin-top: 20vh;
+    text-align: center;
+    align-items: center;
+}
+
+.contactsec .conheading {
+    background-color: rgb(238, 237, 236);
+}
+
+.contactsec .conheading h2 {
+    color: rgb(255, 115, 0);
+    padding: 35px;
+}
+
+.contactsec .contact {
+    text-align: center;
+    display: flex;
+    gap: 3rem;
+    flex-direction: row;
+}
+
+.contactsec .contact .contactform {
+    width: 60%;
+}
+
+.contactsec .contact .contactform .msgform input,
+textarea {
+    width: 65%;
+    padding: 15px;
+    border-radius: 2px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.contactsec .contact .contactform .msgform .btn3 {
+    background-color: rgb(255, 115, 0);
+    padding: 7px 20px;
+    border-radius: 5px;
+    margin-top: 9px;
+}
+
+.contactsec .contact .contactform .msgform .btn3:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.contactsec .contact .address {
+    margin-top: 6vh;
+    width: 30%;
+    text-align: left;
+}
+.contactsec .contact .address h5{
+    color: rgb(255, 115, 0);
+}
+
+/* Foooter section design */
+.footersec {
+    height: 70vh;
+    margin-top: 5vh;
+    background-color: rgb(39, 38, 38);
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+.footersec .upfooter {
+    height: 75%;
+    display: flex;
+    gap: 4rem;
+    text-align: center;
+    padding: 5%;
+}
+
+.footersec .upfooter .about {
+    width: 32%;
+    text-align: center;
+}
+.footersec .upfooter .about p{
+    text-align: justify;
+    padding: 5% 10%;
+}
+
+.footersec .upfooter .qlinks {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 10%;
+}
+.footersec .upfooter .qlinks a{
+    text-decoration: none;
+    color: white;
+}
+.footersec .upfooter .qlinks a span{
+    padding: 1px 6px;
+    font-size: 20px;
+}
+.footersec .upfooter .newsletter {
+    width: 32%;
+}
+.footersec .upfooter .newsletter input{
+    padding: 4px;
+    border-radius: 5px;
+}
+.footersec .upfooter .newsletter .btn4{
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+.footersec .upfooter .newsletter .social a{
+    color: white;
+    font-size: 35px;
+    padding: 12px;
+
+}
+.footersec .lowfooter{
+    padding-top: 22px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
